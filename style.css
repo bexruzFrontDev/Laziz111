@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.boxes {
+    display: flex;
+    gap: 130px;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 0;
+}
+
+
+.box1 {
+    width: 200px;
+    position: relative;
+    animation-duration: 5s;
+    animation:  2.5s linear infinite;
+    animation-iteration-count: infinite;
+    height: 200px;
+    background-color: rgb(4, 58, 4);
+    animation-name: torburce;
+    
+}
+@keyframes torburce {
+    0%{
+        transform: rotate(-360deg);
+    }
+}
+
+
+
+
+.box2 {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 50%;
+    animation-name: krug;
+    animation-direction: alternate;
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+@keyframes krug {
+    0%{
+        transform: scale(1.2);
+    }
+}
+.box3 {
+    width: 150px;
+    height: 400px;
+    animation-duration: 2s;
+    animation-name: jojo;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+@keyframes jojo {
+    
+       10% {
+    background-color: rgb(251, 255, 0);
+}
+60% {
+    background-color: rgb(255, 0, 179);
+}
+100% {
+    background-color: blue;
+}
+    
+}
+.box4 {
+    width: 200px;
+    height: 200px;
+    background-color: coral;
+    animation-name: poo;
+    position: relative;
+    animation-duration: 1.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes poo {
+    0% {
+    transform: rotate(50deg);
+}
+}
